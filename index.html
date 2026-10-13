@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPT &amp; GPTC Shoranur | Institute of Printing Technology &amp; Government Polytechnic College</title>
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Google Fonts: Merriweather & Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;display=swap"
+    rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <!-- Tailwind CSS v3 with Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="script.js"></script>
+</head>
+
+<body
+  class="bg-background text-on-background font-body-md antialiased selection:bg-surface-variant selection:text-primary">
+  <!-- 1. GOVERNMENT UTILITY BAR -->
+  <header class="bg-primary text-on-primary border-b border-primary-container text-body-sm font-body-sm relative z-50">
+    <div class="max-w-7xl mx-auto px-6 py-1.5 flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="font-label-md text-label-md tracking-wider text-surface-bright uppercase">
+          Government of Kerala | Directorate of Technical Education
+        </span>
+      </div>
+    </div>
+  </header>
+  <!-- 2. INSTITUTION BRANDING HEADER -->
+  <div class="bg-surface-container-lowest border-b border-outline-variant py-4 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4 text-center md:text-left">
+        <div
+          class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center border-2 border-primary text-primary flex-shrink-0 overflow-hidden">
+          <img class="w-full h-full object-contain p-2" src="images//campus/logo.png"
+            alt="Official IPT and GPTC Shoranur logo" />
+        </div>
+        <div>
+          <div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Government
+            Technical Institution</div>
+          <h1 class="font-headline-md text-headline-md text-primary leading-tight">
+            IPT &amp; GPTC Shoranur
+          </h1>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Institute of Printing Technology &amp; Government Polytechnic College<br class="hidden sm:block" />
+            Shoranur, Palakkad, Kerala
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-4 text-primary font-label-md text-label-md">
+        <a class="inline-flex items-center gap-1.5 hover:text-secondary" href="tel:04662222491"><span
+            class="material-symbols-outlined text-lg">phone</span>Contact</a>
+        <a class="inline-flex items-center gap-1.5 hover:text-secondary" href="mailto:iptgptcsrr@gmail.com"><span
+            class="material-symbols-outlined text-lg">mail</span>Email</a>
+        <a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-4 py-2.5 rounded-lg transition-colors shadow-sm"
+          href="#student-services" aria-label="Student services and portal information">
+          <span class="material-symbols-outlined text-lg">badge</span>Student Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. TOP NAV BAR (Shared Component Execution) -->
+  <nav
+    class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center w-full">
+      <button class="mobile-nav-toggle p-2 text-primary" type="button" aria-label="Open navigation"
+        aria-expanded="false" aria-controls="primary-navigation"><span class="material-symbols-outlined"
+          aria-hidden="true">menu</span></button>
+      <div class="main-nav-links flex items-center gap-1 py-2" id="primary-navigation">
+        <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#institution">About</a>
+        <div class="nav-dropdown"><button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false"
+            aria-controls="academics-menu">Academics <span class="material-symbols-outlined"
+              aria-hidden="true">expand_more</span></button>
+          <div class="nav-dropdown-menu" id="academics-menu"><a href="#departments">Departments</a><a
+              href="#departments">Courses</a><a href="#departments">Curriculum</a><a href="faculty-printing.html">Printing Technology Faculty</a><a href="faculty-computer.html">Computer Engineering Faculty</a><a href="faculty-electronics.html">Electronics Engineering Faculty</a><a href="faculty-general-sciences.html">General &amp; Applied Sciences Faculty</a>
+          </div>
+        </div>
+        <div class="nav-dropdown"><button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false"
+            aria-controls="admissions-menu">Admissions <span class="material-symbols-outlined"
+              aria-hidden="true">expand_more</span></button>
+          <div class="nav-dropdown-menu" id="admissions-menu"><a href="#admissions">Diploma Admissions</a><a
+              href="#admissions">Eligibility</a><a href="#admissions">Fees</a><a href="#admissions">How to Apply</a><a
+              href="#notices">Important Dates &amp; Notices</a></div>
+        </div>
+        <div class="nav-dropdown"><button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false"
+            aria-controls="students-menu">Students <span class="material-symbols-outlined"
+              aria-hidden="true">expand_more</span></button>
+          <div class="nav-dropdown-menu" id="students-menu"><a href="#examinations">Examination</a><a
+              href="#results">Results</a><a href="#scholarships">Scholarships</a><a href="#hostel">Hostel</a><a
+              href="#student-services">Student Services</a></div>
+        </div>
+        <a class="nav-link" href="#notices">Notices</a><a class="nav-link" href="about.html#campus-gallery">Campus</a><a
+          class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- 4. URGENT ANNOUNCEMENT TICKER -->
+  <div
+    class="bg-secondary-fixed border-y border-secondary text-on-secondary-fixed py-2 overflow-hidden flex items-center">
+    <div
+      class="flex items-center px-4 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase py-0.5 ml-4 rounded font-bold shadow-xs whitespace-nowrap z-10">
+      <span class="material-symbols-outlined text-xs mr-1 animate-pulse">campaign</span>
+      Circulars
+    </div>
+    <div class="overflow-hidden w-full relative flex items-center pl-4">
+      <div class="animate-ticker font-body-md text-body-md text-on-secondary-fixed font-medium">
+        🔔 <strong>Polytechnic Diploma Admissions</strong>: Information available via DTE Kerala SITTTR portal •
+        📝 <strong>SBTE Examination Board</strong>: Even Semester Theory &amp; Practical Time Table officially released
+         • 
+        💼 <strong>Training &amp; Placement</strong>: Career development and industry interaction activities •
+        🎓 <strong>Post-Matric &amp; Saksham Scholarships</strong>: Verification details available through college
+        office.
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. HERO SHOWCASE SECTION -->
+  <section class="hero-photo relative isolate overflow-hidden border-b border-primary-container" id="home">
+    <div class="hero-photo__media" aria-label="Campus video">
+      <video class="hero-photo__video" autoplay muted loop playsinline>
+        <source src="images/campus/intro.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </div>
+    <div aria-hidden="true" class="hero-photo__overlay"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-14 lg:py-20 min-h-[560px] flex flex-col justify-center">
+      <div class="max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 bg-secondary px-3 py-1.5 text-on-secondary font-label-sm text-label-sm font-bold rounded-sm shadow-sm">
+          <span class="material-symbols-outlined text-sm">verified</span>
+          Government Polytechnic College • Established 1967
+        </div>
+        <h1 class="mt-5 font-headline-lg text-4xl md:text-5xl leading-tight text-white tracking-tight">
+          Institute of Printing Technology &amp;<br class="hidden md:block" /> Government Polytechnic College
+        </h1>
+        <p class="mt-4 max-w-2xl font-body-lg text-body-lg leading-relaxed text-surface-variant">
+          Government technical education institution providing diploma-level technical education in Kerala.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a class="inline-flex items-center gap-2 bg-secondary px-5 py-3 text-on-secondary font-label-lg text-label-lg font-semibold rounded-sm shadow-sm transition-colors hover:bg-secondary-container hover:text-on-secondary-container"
+            href="#admissions">
+            <span class="material-symbols-outlined text-lg">school</span>
+            Explore Courses
+          </a>
+          <a class="inline-flex items-center gap-2 bg-surface-container-lowest px-5 py-3 text-primary font-label-lg text-label-lg font-semibold rounded-sm shadow-sm transition-colors hover:bg-surface-container-high"
+            href="#admissions">
+            <span class="material-symbols-outlined text-lg">event_note</span>
+            Admissions 2026–27
+          </a>
+          <a class="inline-flex items-center gap-2 border border-surface-variant/60 px-5 py-3 text-surface-bright font-label-lg text-label-lg font-semibold rounded-sm transition-colors hover:bg-white/10"
+            href="#notices">
+            <span class="material-symbols-outlined text-lg">campaign</span>
+            View Notices
+          </a>
+        </div>
+      </div>
+      <div class="mt-9 pt-5 border-t border-white/20 grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl">
+        <div class="hero-photo__stat"><span class="material-symbols-outlined">account_balance</span>
+          <div><strong>DTE Kerala</strong><small>Govt. Polytechnic</small></div>
+        </div>
+        <div class="hero-photo__stat"><span class="material-symbols-outlined">verified_user</span>
+          <div><strong>AICTE Approved</strong><small>3-Year Engg Diplomas</small></div>
+        </div>
+        <div class="hero-photo__stat"><span class="material-symbols-outlined">print</span>
+          <div><strong>State Printing Hub</strong><small>Premier Specialisation</small></div>
+        </div>
+        <div class="hero-photo__stat"><span class="material-symbols-outlined">business</span>
+          <div><strong>Training &amp; Placement</strong><small>Career Development</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="quick-links-section max-w-7xl mx-auto px-6 py-8" aria-label="Quick links">
+    <div class="quick-links-grid">
+      <a href="#admissions"><span class="material-symbols-outlined">school</span><strong>Admissions</strong></a>
+      <a href="#notices"><span class="material-symbols-outlined">campaign</span><strong>Notices</strong></a>
+      <a href="#examinations"><span class="material-symbols-outlined">calendar_month</span><strong>Exam
+          Schedule</strong></a>
+      <a href="#results"><span class="material-symbols-outlined">description</span><strong>Results</strong></a>
+      <a href="#departments"><span class="material-symbols-outlined">account_tree</span><strong>Departments</strong></a>
+      <a href="#scholarships"><span class="material-symbols-outlined">savings</span><strong>Scholarships</strong></a>
+      <a href="#hostel"><span class="material-symbols-outlined">home</span><strong>Hostel</strong></a>
+      <a href="#contact"><span class="material-symbols-outlined">phone</span><strong>Contact</strong></a>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS -->
+  <section class="institutional-section max-w-7xl mx-auto px-6 py-14" id="admissions">
+    <div class="section-intro">
+      <div>
+        <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Admissions</div>
+        <h2 class="font-headline-lg text-headline-lg text-primary">Diploma programmes</h2>
+      </div>
+      <p>Information for students and parents planning the next step in technical education.</p>
+    </div>
+    <div class="info-grid">
+      <div><span class="material-symbols-outlined">menu_book</span>
+        <h3>Courses available</h3>
+        <p>Explore the diploma programmes and departments offered at IPT &amp; GPTC Shoranur.</p>
+      </div>
+      <div><span class="material-symbols-outlined">how_to_reg</span>
+        <h3>Eligibility &amp; fees</h3>
+        <p>Check eligibility requirements, fee details and the latest admission guidelines.</p>
+      </div>
+      <div><span class="material-symbols-outlined">task_alt</span>
+        <h3>How to apply</h3>
+        <p>Follow the official admission process and important dates published by DTE Kerala.</p>
+      </div>
+    </div>
+    <a class="inline-flex items-center gap-2 mt-7 text-primary font-label-md text-label-md font-bold hover:text-secondary"
+      href="#contact">Contact the college for admission details <span
+        class="material-symbols-outlined">arrow_forward</span></a>
+  </section>
+
+  <!-- 6. ACADEMIC PROGRAM DEPARTMENTS (Bento Grid Architecture) -->
+  <section class="py-16 max-w-7xl mx-auto px-6" id="departments">
+    <div
+      class="border-b border-outline-variant pb-6 mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Approved Technical
+          Qualifications</div>
+        <h2 class="font-headline-lg text-headline-lg text-primary">Key Academic Departments</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-1">Full-time 3-year (6 Semesters) State Board
+          Diploma programs</p>
+      </div>
+      <span
+        class="font-label-sm text-label-sm bg-surface-container px-3 py-1.5 rounded text-primary border border-outline-variant">
+        Affiliation: SBTE Kerala | Approved by AICTE
+      </span>
+    </div>
+    <!-- Bento Grid Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Department 1: Printing Technology (Flagship Featured Card) -->
+      <div
+        class="lg:col-span-2 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col justify-between border-t-4 border-t-secondary hover:shadow-md transition-shadow">
+        <div class="p-6 sm:p-8">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm font-bold">
+              <span class="w-2 h-2 rounded-full bg-secondary"></span>
+              Government Polytechnic College • Established 1967
+            </span>
+            <span class="font-label-md text-label-md text-outline">Intake: 60 Seats / Year</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md text-primary mb-3">
+            Department of Printing Technology
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Diploma programme in printing and graphic arts. Curriculum encompasses prepress workflows, color
+            reproduction science, offset lithography, flexography, gravure processes, modern packaging engineering, and
+            digital finishing technologies.
+          </p>
+          <!-- Core Specializations -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-body-sm font-body-sm text-on-surface mb-6">
+            <div class="p-2.5 bg-surface-container-low rounded border border-outline-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base">layers</span>
+              <span>Offset &amp; Web Litho</span>
+            </div>
+            <div class="p-2.5 bg-surface-container-low rounded border border-outline-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base">palette</span>
+              <span>Color Management</span>
+            </div>
+            <div class="p-2.5 bg-surface-container-low rounded border border-outline-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base">inventory_2</span>
+              <span>Packaging Design</span>
+            </div>
+            <div class="p-2.5 bg-surface-container-low rounded border border-outline-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base">tune</span>
+              <span>Gravure &amp; Flexo</span>
+            </div>
+            <div class="p-2.5 bg-surface-container-low rounded border border-outline-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base">picture_as_pdf</span>
+              <span>Digital Prepress Workflow</span>
+            </div>
+            <div class="p-2.5 bg-surface-container-low rounded border border-outline-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base">security</span>
+              <span>Security Printing</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-surface-container-low px-6 sm:px-8 py-4 border-t border-outline-variant flex items-center justify-between">
+          <div class="flex items-center gap-2 font-label-md text-label-md text-primary">
+            <span class="material-symbols-outlined text-base">school</span>
+            <span>Training &amp; Placement Support</span>
+          </div>
+          <a class="text-secondary font-label-md text-label-md hover:underline flex items-center gap-1 font-bold"
+            href="faculty-printing.html">
+            Programme Info <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Department 2: Computer Engineering -->
+      <div
+        class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col justify-between border-t-4 border-t-primary hover:shadow-md transition-shadow">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-primary text-label-sm font-label-sm font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Engineering Diploma
+            </span>
+            <span class="font-label-sm text-label-sm text-outline">60 Seats</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+            Department of Computer Engineering
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Rigorous foundations in algorithms, Linux system administration, web technologies, computer hardware
+            maintenance, relational databases, and modern cloud application development.
+          </p>
+          <ul class="space-y-2 text-body-sm font-body-sm text-on-surface mb-6">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">terminal</span>
+              <span>Full-Stack &amp; Open-Source Tech</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">hub</span>
+              <span>Computer Networks &amp; Security</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">memory</span>
+              <span>Microcontroller Programming</span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-surface-container-low px-6 py-3 border-t border-outline-variant flex items-center justify-between">
+          <span class="font-label-sm text-label-sm text-on-surface-variant">SBTE Code: 104</span>
+          <a class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1"
+            href="faculty-computer.html">
+            Programme Info <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Department 3: Electronics Engineering -->
+      <div
+        class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col justify-between border-t-4 border-t-primary hover:shadow-md transition-shadow">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-primary text-label-sm font-label-sm font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Engineering Diploma
+            </span>
+            <span class="font-label-sm text-label-sm text-outline">60 Seats</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+            Department of Electronics Engineering
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Comprehensive curriculum spanning analog/digital electronics, communication networks, embedded IoT systems,
+            industrial automation, and instrumentation labs.
+          </p>
+          <ul class="space-y-2 text-body-sm font-body-sm text-on-surface mb-6">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">developer_board</span>
+              <span>VLSI &amp; Embedded Systems</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">settings_input_antenna</span>
+              <span>Digital Signal &amp; Microwave Labs</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">precision_manufacturing</span>
+              <span>Industrial Automation</span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-surface-container-low px-6 py-3 border-t border-outline-variant flex items-center justify-between">
+          <span class="font-label-sm text-label-sm text-on-surface-variant">SBTE Code: 103</span>
+          <a class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1"
+            href="faculty-electronics.html">
+            Programme Info <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Department 4: General & Applied Sciences -->
+      <div
+        class="lg:col-span-2 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col justify-between border-t-4 border-t-primary-container hover:shadow-md transition-shadow">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-primary text-label-sm font-label-sm font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+              Foundational Sciences
+            </span>
+            <span class="font-label-sm text-label-sm text-outline">Semesters 1 &amp; 2 Core</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+            General &amp; Applied Sciences Department
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Serves all technical diploma streams with rigorous instruction in Engineering Mathematics, Applied Physics,
+            Applied Chemistry, Environmental Science, and Technical Communication English.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="text-label-sm font-label-sm bg-surface-container-low px-3 py-1 rounded border border-outline-variant">Physics
+              &amp; Optics Lab</span>
+            <span
+              class="text-label-sm font-label-sm bg-surface-container-low px-3 py-1 rounded border border-outline-variant">Chemistry
+              Lab</span>
+            <span
+              class="text-label-sm font-label-sm bg-surface-container-low px-3 py-1 rounded border border-outline-variant">Language
+              Communication Lab</span>
+            <span
+              class="text-label-sm font-label-sm bg-surface-container-low px-3 py-1 rounded border border-outline-variant">Engineering
+              Graphics Studio</span>
+          </div>
+        </div>
+        <div
+          class="bg-surface-container-low px-6 py-3 border-t border-outline-variant flex items-center justify-between">
+          <span class="font-label-sm text-label-sm text-on-surface-variant">Core Support Faculty</span>
+          <a class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1"
+            href="faculty-general-sciences.html">
+            Programme Info <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PRINCIPAL'S MESSAGE & INSTITUTIONAL FOCUS -->
+  <section class="bg-surface-container-low py-16 border-y border-outline-variant" id="about">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <!-- Principal Image Column -->
+      <div class="lg:col-span-4 text-center">
+        <div class="inline-block bg-surface-container-lowest p-3 rounded-xl border border-outline-variant shadow-md">
+          <img class="w-64 h-80 object-cover rounded-lg mx-auto border border-outline-variant"
+            data-alt="Official portrait of an academic technical college principal in formal professional attire with spectacles, seated in an institutional office with bookshelves, Kerala state insignia, and diploma accreditation certificates in the background. Dignified, warm, and corporate lighting with crisp framing."
+            src="images/campus/principal.jpg" />
+          <div class="mt-4 text-left px-2">
+            <h4 class="font-title-md text-title-md text-primary font-bold">Smt. Asha G Nair</h4>
+            <h5 class="font-title-md text-title-md text-primary font-semibold ">Principal</h5>
+            <p class="font-body-sm text-body-sm text-secondary font-semibold">IPT &amp; GPTC Shoranur</p>
+            <p class="font-label-sm text-label-sm text-outline">Department of Technical Education, Govt. of Kerala</p>
+          </div>
+        </div>
+      </div>
+      <!-- Speech Content -->
+      <div class="lg:col-span-8 space-y-4">
+        <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">From the Principal's
+          Desk</div>
+        <h2 class="font-headline-lg text-headline-lg text-primary">
+          Principal's Message
+        </h2>
+        <blockquote class="font-body-lg text-body-lg text-on-surface italic border-l-4 border-primary pl-4 my-4">
+          “Education is the most powerful weapon which you can use to change the world”
+          <footer class="mt-2 not-italic font-label-md text-label-md text-on-surface-variant">— Nelson Mandela</footer>
+        </blockquote>
+        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          In a world that has witnessed rapid technological advancement, technical education serves as a vanguard to the
+          future. The Institute of Printing Technology and Government Polytechnic College, as one of the oldest
+          Institutions of technical education in the state, considers it as its responsibility to empower our learners
+          to rise up to the challenges of the society and the industry. We draw strength from a glorious past that has
+          enriched us with a host of prodigious alumni. The goodwill of the public and the support of the government is
+          the wind beneath our wings that gives momentum to our journey towards excellence. We invite students to set in
+          their foot into our campus as aspiring learners and depart as expert technicians of the highest calibre.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT THE INSTITUTION -->
+  <section class="bg-surface-container-low py-14 border-y border-outline-variant" id="institution">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <img class="w-full h-64 object-cover border border-outline-variant" src="images/campus/ipt front.webp"
+        alt="Front view of IPT &amp; GPTC Shoranur" />
+      <div>
+        <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">About the Institution
+        </div>
+        <h2 class="font-headline-lg text-headline-lg text-primary mt-2">About IPT &amp; GPTC Shoranur</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-4">Learn about the institution,
+          its history, academic programmes, campus and role in technical education.</p>
+        <a class="inline-flex items-center gap-2 mt-5 text-primary font-label-md text-label-md font-bold hover:text-secondary"
+          href="about.html">Read More <span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION AND VISION -->
+  <section class="mission-vision-section py-14" id="mission-vision" aria-labelledby="mission-vision-heading">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Our Purpose</div>
+      <h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-8" id="mission-vision-heading">Mission &amp;
+        Vision</h2>
+      <div class="mission-vision-grid">
+        <article class="mission-vision-item mission-vision-item--vision">
+          <h3 class="mission-vision-item__heading"><span class="material-symbols-outlined"
+              aria-hidden="true">visibility</span>Our Vision</h3>
+          <p>Technical institution of the highest order with a transformative impact on society.</p>
+        </article>
+        <article class="mission-vision-item mission-vision-item--mission">
+          <h3 class="mission-vision-item__heading"><span class="material-symbols-outlined"
+              aria-hidden="true">flag</span>Our Mission</h3>
+          <ul class="mission-vision-list">
+            <li>To create and sustain an academic environment that accelerates intellectual growth and skill
+              acquisition.</li>
+            <li>To realise (enhance/develop) a collaborative relationship between the institute and the industry.</li>
+            <li>To facilitate an active involvement in the society through technology transfer, entrepreneurship
+              development and societal outreach programmes.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. NOTICE BOARD & CIRCULAR TABS (Tabular Information Center) -->
+  <section class="py-16 max-w-7xl mx-auto px-6" id="notices">
+    <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant pb-6 mb-8 gap-4">
+      <div>
+        <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Public Notices &amp;
+          Official Gazettes</div>
+        <h2 class="font-headline-lg text-headline-lg text-primary">Notice Board &amp; Circulars</h2>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <label class="notice-search"><span class="material-symbols-outlined">search</span><input id="noticeSearch"
+            type="search" placeholder="Search notices" aria-label="Search notices" /></label>
+        <button class="notice-filter" type="button" data-notice-filter="all" aria-pressed="true">All Notices</button>
+        <button class="notice-filter" type="button" data-notice-filter="admissions"
+          aria-pressed="false">Admissions</button>
+        <button class="notice-filter" type="button" data-notice-filter="examinations"
+          aria-pressed="false">Examinations</button>
+        <button class="notice-filter" type="button" data-notice-filter="tenders" aria-pressed="false">Tenders</button>
+        <button class="notice-filter" type="button" data-notice-filter="scholarship"
+          aria-pressed="false">Scholarships</button>
+      </div>
+    </div>
+    <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr
+              class="bg-surface-container-low border-b border-outline-variant text-label-sm font-label-sm text-outline uppercase tracking-wider">
+              <th class="py-3.5 px-6">Published Date</th>
+              <th class="py-3.5 px-6">Circular Subject &amp; Reference Number</th>
+              <th class="py-3.5 px-6">Department / Wing</th>
+              <th class="py-3.5 px-6 text-right">Official Document</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-outline-variant text-body-md font-body-md">
+            <tr class="hover:bg-surface-container-low transition-colors" data-notice-category="admissions">
+              <td class="py-4 px-6 font-mono text-body-sm font-body-sm text-on-surface whitespace-nowrap">
+                2024-10-18
+              </td>
+              <td class="py-4 px-6">
+                <div class="flex items-center gap-2">
+                  <span class="font-title-md text-title-md text-primary font-semibold">Diploma Second Allotment Joining
+                    Guidelines 2024-25</span>
+                  <span class="bg-error text-on-error text-[10px] font-bold px-1.5 py-0.5 rounded">NEW</span>
+                </div>
+                <div class="text-body-sm font-body-sm text-on-surface-variant">Ref: DTE/ADMN/POLY/2024/771 • Reporting
+                  schedule at Shoranur campus</div>
+              </td>
+              <td class="py-4 px-6">
+                <span
+                  class="inline-block px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-semibold">Admissions</span>
+              </td>
+              <td class="py-4 px-6 text-right whitespace-nowrap">
+                <span class="text-body-sm text-on-surface-variant">Document not linked</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors" data-notice-category="examinations">
+              <td class="py-4 px-6 font-mono text-body-sm font-body-sm text-on-surface whitespace-nowrap">
+                2024-10-15
+              </td>
+              <td class="py-4 px-6">
+                <div class="flex items-center gap-2">
+                  <span class="font-title-md text-title-md text-primary font-semibold">SBTE Kerala Even Semester Theory
+                    Exam Time Table Notification</span>
+                  <span class="bg-error text-on-error text-[10px] font-bold px-1.5 py-0.5 rounded">NEW</span>
+                </div>
+                <div class="text-body-sm font-body-sm text-on-surface-variant">Controller of Technical Examinations,
+                  Thiruvananthapuram - Diploma Revision 2021</div>
+              </td>
+              <td class="py-4 px-6">
+                <span
+                  class="inline-block px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-semibold">Examinations</span>
+              </td>
+              <td class="py-4 px-6 text-right whitespace-nowrap">
+                <span class="text-body-sm text-on-surface-variant">Document not linked</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors" data-notice-category="tenders">
+              <td class="py-4 px-6 font-mono text-body-sm font-body-sm text-on-surface whitespace-nowrap">
+                2024-10-10
+              </td>
+              <td class="py-4 px-6">
+                <div class="font-title-md text-title-md text-primary font-semibold">Quotations Invited for Supply of
+                  Offset Printing Consumables &amp; Rubber Blankets</div>
+                <div class="text-body-sm font-body-sm text-on-surface-variant">Tender Notice: IPT/GPTC/SRR/TNDR/04/2024
+                  • Last Date: 28-10-2024</div>
+              </td>
+              <td class="py-4 px-6">
+                <span
+                  class="inline-block px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-semibold">Tenders</span>
+              </td>
+              <td class="py-4 px-6 text-right whitespace-nowrap">
+                <span class="text-body-sm text-on-surface-variant">Document not linked</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors" data-notice-category="scholarship">
+              <td class="py-4 px-6 font-mono text-body-sm font-body-sm text-on-surface whitespace-nowrap">
+                2024-10-02
+              </td>
+              <td class="py-4 px-6">
+                <div class="font-title-md text-title-md text-primary font-semibold">AICTE Pragati &amp; Saksham
+                  Scholarship Online Verification Notification</div>
+                <div class="text-body-sm font-body-sm text-on-surface-variant">Eligible female and differently-abled
+                  students are requested to submit documents to Academic Section</div>
+              </td>
+              <td class="py-4 px-6">
+                <span
+                  class="inline-block px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container text-primary font-semibold">Scholarship</span>
+              </td>
+              <td class="py-4 px-6 text-right whitespace-nowrap">
+                <span class="text-body-sm text-on-surface-variant">Document not linked</span>
+              </td>
+            </tr>
+            <tr id="noticeNoResults" hidden>
+              <td class="py-6 px-6 text-center text-body-sm text-on-surface-variant" colspan="4">No notices match the
+                selected category and search.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-surface-container-low px-6 py-3 border-t border-outline-variant flex justify-between items-center">
+        <span class="font-body-sm text-body-sm text-on-surface-variant">Notice archive is not available on this
+          page.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENT SERVICES -->
+  <section class="student-services-section py-14 border-y border-outline-variant" id="student-services">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Student Support</div>
+      <h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-8">Student Services</h2>
+      <div class="service-grid">
+        <a id="examinations" href="#notices"><span
+            class="material-symbols-outlined">school</span><strong>SBTE</strong><small>Examination &amp; academic
+            information</small></a>
+        <a id="scholarships" href="#contact"><span
+            class="material-symbols-outlined">savings</span><strong>Scholarships</strong><small>Contact the college for
+            scholarship guidance</small></a>
+        <a id="hostel" href="#contact"><span
+            class="material-symbols-outlined">home</span><strong>Hostel</strong><small>Contact the college for hostel
+            information</small></a>
+        <a href="#contact"><span
+            class="material-symbols-outlined">local_library</span><strong>Library</strong><small>Contact the college for
+            library information</small></a>
+        <a id="results" href="#notices"><span
+            class="material-symbols-outlined">grading</span><strong>Results</strong><small>Examination announcements and
+            updates</small></a>
+        <a href="#notices"><span class="material-symbols-outlined">campaign</span><strong>Notices</strong><small>Latest
+            announcements</small></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. MANDATORY STATUTORY & CITIZEN CHARTER QUICK TILE -->
+  <section class="bg-surface-container py-12 border-t border-outline-variant" id="disclosures">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div
+          class="bg-surface-container-lowest p-6 rounded-lg border-l-4 border-l-primary border border-outline-variant"
+          id="rti">
+          <div class="flex items-center gap-2 mb-2 text-primary font-title-md text-title-md font-bold">
+            <span class="material-symbols-outlined text-secondary">gavel</span>
+            <span>RTI Act 2005</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Right to Information designated Public
+            Information Officer and Appellate Authority details.</p>
+          <a class="font-label-md text-label-md text-primary font-bold hover:underline" href="#contact">Contact the
+            college for RTI details →</a>
+        </div>
+        <div
+          class="bg-surface-container-lowest p-6 rounded-lg border-l-4 border-l-primary border border-outline-variant"
+          id="anti-ragging">
+          <div class="flex items-center gap-2 mb-2 text-primary font-title-md text-title-md font-bold">
+            <span class="material-symbols-outlined text-secondary">shield</span>
+            <span>Anti-Ragging Squad</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">For current anti-ragging information and
+            contacts, please contact the college.</p>
+          <a class="font-label-md text-label-md text-primary font-bold hover:underline" href="#contact">Contact the
+            college →</a>
+        </div>
+        <div
+          class="bg-surface-container-lowest p-6 rounded-lg border-l-4 border-l-primary border border-outline-variant"
+          id="aicte-disclosures">
+          <div class="flex items-center gap-2 mb-2 text-primary font-title-md text-title-md font-bold">
+            <span class="material-symbols-outlined text-secondary">policy</span>
+            <span>Mandatory AICTE</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Official disclosures, faculty
+            qualifications, financial audits, and extension of approvals.</p>
+          <a class="font-label-md text-label-md text-primary font-bold hover:underline" href="#contact">Contact the
+            college for disclosure documents →</a>
+        </div>
+        <div
+          class="bg-surface-container-lowest p-6 rounded-lg border-l-4 border-l-primary border border-outline-variant"
+          id="grievance">
+          <div class="flex items-center gap-2 mb-2 text-primary font-title-md text-title-md font-bold">
+            <span class="material-symbols-outlined text-secondary">support_agent</span>
+            <span>Grievance Redressal</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">For grievance support and current submission
+            procedures, please contact the college.</p>
+          <a class="font-label-md text-label-md text-primary font-bold hover:underline" href="#contact">Contact the
+            college →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. INSTITUTIONAL FOOTER (Shared Component Exact Implementation) -->
+  <footer class="bg-primary dark:bg-inverse-surface border-t-4 border-secondary dark:border-secondary-container"
+    id="contact">
+    <div class="max-w-7xl mx-auto px-6 py-12 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-8 border-b border-outline">
+        <!-- Column 1: Brand & Identity -->
+        <div class="space-y-4">
+          <div class="text-headline-sm font-headline-sm font-bold text-on-primary dark:text-inverse-on-surface">
+            IPT &amp; GPTC Shoranur
+          </div>
+          <p class="text-surface-variant dark:text-outline-variant text-body-sm font-body-sm">
+            Government of Kerala Polytechnic College operating under the Directorate of Technical Education,
+            Thiruvananthapuram.
+          </p>
+          <div class="text-surface-bright dark:text-inverse-on-surface text-body-sm font-body-sm space-y-1">
+            <div><strong>AISHE Code:</strong> C-43640</div>
+            <div><strong>DTE Code:</strong> 014</div>
+          </div>
+        </div>
+        <!-- Column 2: Official Address -->
+        <div class="space-y-2 text-body-sm font-body-sm text-surface-variant dark:text-outline-variant">
+          <div class="text-title-lg font-title-lg text-surface-bright dark:text-inverse-on-surface font-bold">
+            Campus Address
+          </div>
+          <p>
+            Institute of Printing Technology &amp;<br />
+            Government Polytechnic College,<br />
+            Govt. Press P.O., Shoranur,<br />
+            Palakkad District, Kerala - 679 122.
+          </p>
+          <p class="pt-2 text-surface-bright dark:text-inverse-on-surface">
+            <strong>Phone:</strong> 0466 2222491<br />
+            <strong>Email:</strong> iptgptc@yahoo.co.in / iptgptcsrr@gmail.com
+          </p>
+        </div>
+        <!-- Column 3: Institutional Links (Shared Component Anchor) -->
+        <div class="space-y-2">
+          <div class="text-title-lg font-title-lg text-surface-bright dark:text-inverse-on-surface font-bold">
+            Statutory Links
+          </div>
+          <ul class="space-y-1.5">
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="#aicte-disclosures">Mandatory Disclosures</a></li>
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="#rti">Right to Information (RTI)</a></li>
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="#aicte-disclosures">AICTE Mandatory Disclosure</a></li>
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="#grievance">Grievance Redressal Cell</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: More Links -->
+        <div class="space-y-2">
+          <div class="text-title-lg font-title-lg text-surface-bright dark:text-inverse-on-surface font-bold">
+            Academics &amp; Campus
+          </div>
+          <ul class="space-y-1.5">
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="#anti-ragging">Anti-Ragging Committee</a></li>
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="#departments">Courses &amp; Curriculum</a></li>
+            <li><a
+                class="text-surface-variant dark:text-outline-variant hover:text-on-primary dark:hover:text-inverse-on-surface text-body-sm font-body-sm transition-colors"
+                href="about.html#campus-gallery">Campus information</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright Sub-strip (Verbatim JSON Content) -->
+      <div class="text-center text-body-sm font-body-sm text-surface-variant dark:text-outline-variant leading-relaxed">
+        © <span id="copyright-year">2024</span> Institute of Printing Technology &amp; Government Polytechnic College
+        Shoranur. Department of Technical Education, Government of Kerala. Approved by AICTE, New Delhi.
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
